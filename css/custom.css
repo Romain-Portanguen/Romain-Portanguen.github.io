@@ -1,4 +1,5 @@
 /* Global CSS variables */
+
 :root {
     --spacing-company: 3rem;
     --font-weight: 400;
@@ -6,14 +7,25 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: 'Oswald', sans-serif;
+    color: aliceblue;
 }
 
 /* Typography */
+
 h2,
 h3,
 hgroup> :last-child {
     font-weight: 200;
+}
+
+.h2-anchor {
+    scroll-margin: 2.5em;
+}
+
+.soon-element {
+    color: #00C1CA;
 }
 
 small {
@@ -71,9 +83,14 @@ header hgroup {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #141e26b6;
     position: fixed;
 
+}
+
+.nav-a {
+    color: aliceblue;
+    cursor: pointer;
 }
 
 summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
@@ -82,22 +99,19 @@ summary[role="link"].contrast:is([aria-current], :hover, :active, :focus) {
 }
 
 /* Main */
+
 .main-container {
     text-align: justify;
     border: 1px solid #3D4951;
     border-radius: 10px;
 }
 
-@media (min-width: 992px) {
-    main .grid {
-        grid-column-gap: var(--spacing-company);
-        grid-template-columns: auto 25%;
-    }
+figcaption {
+    font-size: 0.7rem;
 }
 
-form.grid {
-    grid-row-gap: 0;
-
+.main-img {
+    border-radius: 90px 20px 90px 20px;
 }
 
 /* Aside nav */
